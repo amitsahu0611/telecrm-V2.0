@@ -1,0 +1,296 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nowgray Invoice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #fff;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header-bar {
+        background-color: #2b4b96;
+        height: 15px;
+        width: 100%;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .company-info {
+        color: #2b4b96;
+      }
+      .company-info h1 {
+        margin: 0;
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+      .company-info p {
+        margin: 3px 0;
+        font-size: 14px;
+        color: #666;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 80px;
+      }
+      .invoice-title {
+        color: #2b4b96;
+        font-size: 32px;
+        margin: 20px;
+        font-weight: bold;
+      }
+      .invoice-date {
+        margin: 0 20px;
+        color: #666;
+        font-size: 14px;
+      }
+      .invoice-details {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      .invoice-section {
+        width: 30%;
+      }
+      .invoice-section h3 {
+        margin-top: 0;
+        color: #666;
+        font-weight: normal;
+        font-size: 16px;
+      }
+      .invoice-section p {
+        margin: 5px 0;
+        font-size: 14px;
+      }
+      .invoice-section strong {
+        font-weight: bold;
+      }
+      .services {
+        margin: 0 20px;
+      }
+      .services h3 {
+        color: #666;
+        font-weight: normal;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      .services p {
+        margin: 3px 0;
+        font-size: 14px;
+      }
+      .table-container {
+        margin: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th {
+        background-color: #f9f9f9;
+        color: #2b4b96;
+        text-align: left;
+        padding: 10px;
+        font-weight: normal;
+        border-bottom: 1px solid #ddd;
+      }
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .summary {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .thank-you {
+        width: 60%;
+        font-size: 14px;
+        color: #666;
+      }
+      .thank-you a {
+        color: #2b4b96;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .totals {
+        width: 35%;
+      }
+      .totals table {
+        width: 100%;
+      }
+      .totals td {
+        padding: 5px 0;
+        border: none;
+      }
+      .final-total {
+        border: 1px solid #2b4b96;
+        padding: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        color: #2b4b96;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .powered-by {
+        margin: 20px;
+        font-size: 14px;
+        color: #666;
+      }
+      .powered-by a {
+        color: #7ab51d;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .gstin {
+        margin: 0 20px;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-bar"></div>
+      <div class="header">
+        <div class="company-info">
+          <h1>Nowgray It Services Pvt Ltd</h1>
+          <p>Ground Floor, 798, Manas Enclave, Indira Nagar</p>
+          <p>Lucknow, Uttar Pradesh, 226016</p>
+          <p>info@nowgray.com, +91 888 136 1111</p>
+        </div>
+        <div class="logo-container">
+          <!-- Placeholder for the logo images -->
+          <div
+            style="
+              width: 200px;
+              height: 80px;
+              background-color: #f5f5f5;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <span style="color: #999">Company Logos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gstin">
+        <p>GSTIN: 09AAFCN9228H1Z4</p>
+      </div>
+
+      <div class="invoice-title">Invoice</div>
+      <div class="invoice-date">Submitted on 06 Jan 2025</div>
+
+      <div class="invoice-details">
+        <div class="invoice-section">
+          <h3>Invoice for</h3>
+          <p><strong>OPINE FIN EXPERT PRIVATE LIMITED</strong></p>
+          <p>+91 97803 23742</p>
+          <p>GSTIN: 09AAFOP1234A1Z5</p>
+          <p>
+            Floor No.: SECOND FLOOR CABIN NO. 13, Building No./Flat No.: SCO 43
+          </p>
+          <p>Road/Street: SECTOR 12</p>
+          <p>City/Town/Village: Panchkula</p>
+          <p>District: Panchkula, PIN Code: 134112</p>
+        </div>
+        <div class="invoice-section">
+          <h3>Payable to</h3>
+          <p>Nowgray It Services Pvt Ltd</p>
+        </div>
+        <div class="invoice-section">
+          <h3>Invoice #</h3>
+          <p>NG00892</p>
+          <h3>Due date</h3>
+          <p>1/6/2025</p>
+        </div>
+      </div>
+
+      <div class="services">
+        <h3>Services</h3>
+        <p>Ca Office Management Software</p>
+        <p>(Powered by Nowgray.com)</p>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Month</th>
+              <th>Monthly Price</th>
+              <th>Total price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ca-oms.in (06/01/2025 - 06/07/2025) 4 Users</td>
+              <td>6</td>
+              <td class="text-right">₹9,075.00</td>
+              <td class="text-right">₹9,075.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="summary">
+        <div class="thank-you">
+          <p>
+            Thank you for choosing our
+            <a href="#">CA Office Management Software</a>! We appreciate your
+            trust and are committed to supporting your business needs.
+          </p>
+        </div>
+        <div class="totals">
+          <table>
+            <tr>
+              <td>Subtotal</td>
+              <td class="text-right">₹9,075.00</td>
+            </tr>
+            <tr>
+              <td>Discount</td>
+              <td class="text-right">₹2,500.00</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td class="text-right">₹6,575.00</td>
+            </tr>
+            <tr>
+              <td>GST (18%)</td>
+              <td class="text-right">₹1,183.50</td>
+            </tr>
+          </table>
+          <div class="final-total">
+            <span>Total-</span>
+            <span>₹7,758.50</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="powered-by">
+        <p>Powered by <a href="#">Nowgray IT Services</a>.</p>
+      </div>
+    </div>
+  </body>
+</html>

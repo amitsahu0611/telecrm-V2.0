@@ -1,0 +1,241 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecomm11 Invoice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        line-height: 1.4;
+      }
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        border-top: 8px solid #2d3e8b;
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .company-name {
+        color: #f7b731;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .company-details {
+        font-size: 12px;
+        color: #666;
+      }
+      .logo-placeholder {
+        width: 120px;
+        height: 60px;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+      }
+      .invoice-title {
+        color: #f7b731;
+        font-size: 32px;
+        margin: 20px 0 10px 0;
+      }
+      .invoice-date {
+        margin-bottom: 20px;
+        font-size: 14px;
+      }
+      .invoice-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .invoice-section {
+        width: 30%;
+      }
+      .invoice-section h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .invoice-section p {
+        margin: 0;
+        font-size: 13px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th {
+        background-color: #f5f5f5;
+        text-align: left;
+        padding: 10px;
+        font-size: 14px;
+      }
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .terms {
+        background-color: #f5f5f5;
+        padding: 10px;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+      .terms h4 {
+        margin: 0 0 5px 0;
+      }
+      .terms p {
+        margin: 0;
+      }
+      .payment-section {
+        display: flex;
+        justify-content: space-between;
+      }
+      .payment-details {
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 45%;
+      }
+      .payment-details h3 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 14px;
+      }
+      .payment-details p {
+        margin: 5px 0;
+        font-size: 13px;
+      }
+      .total-box {
+        border: 1px solid #000;
+        padding: 10px;
+        width: 45%;
+        text-align: right;
+      }
+      .submit-button {
+        background-color: #f7b731;
+        color: white;
+        border: none;
+        padding: 5px 15px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .gst-highlight {
+        color: #f7b731;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>
+          <div class="company-name">Ecomm11</div>
+          <div class="company-details">
+            1st to 11th Floor, 29-110, Sec-29, Indira Nagar<br />
+            Lucknow, Uttar Pradesh, 226016<br />
+            info@ecomm11.com, +91 9139931174<br />
+            GSTIN: 07AAKCC6957N1ZM
+          </div>
+        </div>
+        <div class="logo-placeholder">ECOMM11 LOGO</div>
+      </div>
+
+      <div class="invoice-title">Invoice</div>
+      <div class="invoice-date">Submitted on 21 March 2025</div>
+
+      <div class="invoice-details">
+        <div class="invoice-section">
+          <h3>Invoice for</h3>
+          <p><strong>RETAIL INDIA PRIVATE LIMITED</strong></p>
+          <p>+91 9654554456</p>
+          <p><strong>GSTIN: 07AAKCC4149P1Z2</strong></p>
+          <p>DAVID SHANKAR DHARMARATAN</p>
+          <p>PAN: AAKCC4149P</p>
+          <p>PAN Code: 110042</p>
+          <p>generalretailco@gmail.com</p>
+        </div>
+        <div class="invoice-section">
+          <h3>Payable to</h3>
+          <p>Ecomm11</p>
+          <p>11 Years of Success</p>
+        </div>
+        <div class="invoice-section">
+          <h3>Invoice #</h3>
+          <p>025/2012</p>
+          <h3>Project</h3>
+          <p>Account<br />Management Services</p>
+          <h3>Due date</h3>
+          <p>3/21/2025</p>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Month</th>
+            <th>Monthly price</th>
+            <th>Total price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Birakt Account Management Services</td>
+            <td>1</td>
+            <td class="text-right">₹6,000.00</td>
+            <td class="text-right">₹6,000.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="terms">
+        <h4>Terms & Conditions:</h4>
+        <p>
+          Clients must provide all product details, product images, or the
+          listings. We are not responsible for any copyright issues.
+        </p>
+        <p>
+          This is the advance payment for 1-month Birakt account management
+          services. Payments are non-refundable and follow the agreed schedule.
+        </p>
+      </div>
+
+      <div style="text-align: right; margin-bottom: 10px">
+        <button class="submit-button">Submit</button>
+        <span style="margin-left: 20px; font-weight: bold">₹6,000.00</span>
+      </div>
+      <div style="text-align: right; margin-bottom: 20px">
+        <span class="gst-highlight">GST (18%)</span>
+        <span style="margin-left: 20px; font-weight: bold">₹1,080.00</span>
+      </div>
+
+      <div class="payment-section">
+        <div class="payment-details">
+          <h3>Payment Details</h3>
+          <p><strong>ACCOUNT HOLDER NAME:</strong> ECOMM VYAPARVANI MISSION</p>
+          <p><strong>ACCOUNT BRANCH:</strong> JANAKPURAM</p>
+          <p><strong>ACCOUNT NO.:</strong> 50200291570106</p>
+          <p><strong>IFSC CODE:</strong> HDFC0001908</p>
+        </div>
+        <div class="total-box">
+          <p>Total Payable (Incl. GST)</p>
+          <h2>₹7,080.00</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

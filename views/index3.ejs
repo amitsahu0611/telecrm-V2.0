@@ -1,0 +1,312 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nowgray Invoice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        border: 1px solid #eee;
+        padding: 20px;
+      }
+      .header-line {
+        height: 5px;
+        background-color: #1e3a8a;
+        margin-bottom: 20px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .company-info {
+        flex: 2;
+      }
+      .logo-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+      .logo-placeholder {
+        width: 80px;
+        height: 80px;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: #8bc34a;
+        font-size: 24px;
+      }
+      .company-name {
+        color: #8bc34a;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .company-address {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 5px;
+      }
+      .gst-info {
+        font-size: 12px;
+        color: #666;
+        margin-top: 10px;
+      }
+      .invoice-title {
+        color: #8bc34a;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 30px 0 15px 0;
+      }
+      .invoice-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .invoice-section {
+        flex: 1;
+      }
+      .invoice-section-title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .invoice-section-content {
+        font-size: 14px;
+        color: #666;
+      }
+      .invoice-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+      .invoice-table th {
+        background-color: #f9f9f9;
+        text-align: left;
+        padding: 10px;
+        font-size: 14px;
+      }
+      .invoice-table th.price-column {
+        text-align: right;
+      }
+      .invoice-table td {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+      }
+      .invoice-table td.price-column {
+        text-align: right;
+      }
+      .description-column {
+        width: 40%;
+      }
+      .pages-column {
+        width: 20%;
+      }
+      .price-column {
+        width: 20%;
+      }
+      .total-column {
+        width: 20%;
+      }
+      .description-header {
+        color: #8bc34a;
+      }
+      .pages-header {
+        color: #8bc34a;
+      }
+      .price-header {
+        color: #8bc34a;
+      }
+      .total-header {
+        color: #8bc34a;
+      }
+      .notes-section {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      .notes-title {
+        width: 80px;
+        font-size: 14px;
+        color: #666;
+      }
+      .notes-content {
+        flex: 1;
+        font-size: 12px;
+        color: #999;
+      }
+      .terms-section {
+        display: flex;
+        margin-bottom: 30px;
+      }
+      .terms-title {
+        width: 80px;
+        font-size: 14px;
+        color: #666;
+      }
+      .terms-content {
+        flex: 1;
+        font-size: 12px;
+        color: #999;
+      }
+      .totals-section {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .totals-table {
+        width: 300px;
+      }
+      .totals-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+      }
+      .totals-label {
+        font-size: 14px;
+        color: #8bc34a;
+      }
+      .totals-value {
+        font-size: 14px;
+        text-align: right;
+      }
+      .final-total {
+        border: 1px solid #8bc34a;
+        padding: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .final-total-label {
+        font-size: 18px;
+        color: #8bc34a;
+        font-weight: bold;
+      }
+      .final-total-value {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-line"></div>
+
+      <div class="header">
+        <div class="company-info">
+          <div class="company-name">Nowgray It Services Pvt Ltd</div>
+          <div class="company-address">
+            Ground Floor, 708, Manish Tower, Indira Nagar
+          </div>
+          <div class="company-address">
+            LUCKNOW, Lucknow, Uttar Pradesh, 226026
+          </div>
+          <div class="company-address">info@nowgray.com, +91 888 136 1111</div>
+          <div class="gst-info">GSTIN: 09AAFCN9228H1Z4</div>
+        </div>
+        <div class="logo-container">
+          <div class="logo-placeholder">N G</div>
+        </div>
+      </div>
+
+      <div class="invoice-title">Invoice</div>
+
+      <div class="invoice-details">
+        <div class="invoice-section">
+          <div class="invoice-section-title">Submitted on 03 March 2025</div>
+          <br />
+          <div class="invoice-section-title">Invoice for</div>
+          <div class="invoice-section-content">ORKA Technologies</div>
+          <br />
+          <div class="invoice-section-title">GSTIN: 33DZPS8744B1ZM</div>
+          <div class="invoice-section-content">102, Thiruvalluvar City 2,</div>
+          <div class="invoice-section-content">
+            Kazhipattur, Kancheepuram, Mangadu,
+          </div>
+          <div class="invoice-section-content">
+            Chennai, Tamilnadu, 600122 IN
+          </div>
+          <div class="invoice-section-content">+91 961 943 1873</div>
+        </div>
+
+        <div class="invoice-section">
+          <div class="invoice-section-title">Payable to</div>
+          <div class="invoice-section-content">Nowgray It Services Pvt Ltd</div>
+          <br />
+          <div class="invoice-section-title">Invoice #</div>
+          <div class="invoice-section-content">NG00906</div>
+          <br />
+          <div class="invoice-section-title">Project</div>
+          <div class="invoice-section-content">Brochure Design Services</div>
+          <br />
+          <div class="invoice-section-title">Due date</div>
+          <div class="invoice-section-content">3/5/2025</div>
+        </div>
+      </div>
+
+      <table class="invoice-table">
+        <thead>
+          <tr>
+            <th class="description-column description-header">Description</th>
+            <th class="pages-column pages-header">Pages</th>
+            <th class="price-column price-header">Monthly Price</th>
+            <th class="total-column total-header">Total price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trifold Advertisement Brochure Design</td>
+            <td>6</td>
+            <td class="price-column">₹500.00</td>
+            <td class="price-column">₹3,000.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="notes-section">
+        <div class="notes-title">Notes:</div>
+        <div class="notes-content">
+          This is the advance payment for designs. Payments are non-refundable
+          and follow the agreed schedule.
+        </div>
+      </div>
+
+      <div class="terms-section">
+        <div class="terms-title">Terms & Conditions:</div>
+        <div class="terms-content">
+          Clients must provide all details, images & contents for the designs.
+          We are not responsible for any copyright claims on provided materials.
+        </div>
+      </div>
+
+      <div class="totals-section">
+        <div class="totals-table">
+          <div class="totals-row">
+            <div class="totals-label">Subtotal</div>
+            <div class="totals-value">₹3,000.00</div>
+          </div>
+          <div class="totals-row">
+            <div class="totals-label">GST (18%)</div>
+            <div class="totals-value">₹540.00</div>
+          </div>
+          <div class="final-total">
+            <div class="final-total-label">Total-</div>
+            <div class="final-total-value">₹3,540.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
