@@ -56,9 +56,7 @@ const Lead = sequelize.define(
     email: {
       type: DataTypes.STRING,
       allowNull: true,
-      validate: {
-        isEmail: true,
-      },
+      
     },
     alternate_phone: {
       type: DataTypes.STRING,
