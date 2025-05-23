@@ -19,7 +19,6 @@ const Lead = sequelize.define(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -56,9 +55,6 @@ const Lead = sequelize.define(
     email: {
       type: DataTypes.STRING,
       allowNull: true,
-      validate: {
-        isEmail: true,
-      },
     },
     alternate_phone: {
       type: DataTypes.STRING,
@@ -95,5 +91,3 @@ module.exports = Lead;
 //     await sequelize.close();
 //   }
 // })();
-
-//hello

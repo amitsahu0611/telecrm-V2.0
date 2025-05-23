@@ -29,15 +29,27 @@ const createCategory = async (req, res) => {
 
 const getAllCategories = async (req, res) => {
   try {
+    const {workspace_id} = req.params;
+
     const categories = await ServiceCategory.findAll({
-      where: {is_delete: false},
+      where: {
+        workspace_id,
+        is_delete: false,
+      },
       order: [["createdAt", "DESC"]],
     });
-    res.status(200).json(categories);
-  } catch (error) {
-    res
-      .status(500)
-      .json({message: "Error fetching categories", error: error.message});
+
+    res.json({
+      success: true,
+      message: "Categories fetched successfully",
+      data: categories,
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: "Error fetching categories",
+      error: err.message,
+    });
   }
 };
 
