@@ -1,6 +1,6 @@
 /** @format */
 
-const {DataTypes} = require("sequelize");
+const { DataTypes } = require("sequelize");
 const sequelize = require("../connection/db_connection");
 
 const Lead = sequelize.define(
@@ -19,7 +19,6 @@ const Lead = sequelize.define(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -56,7 +55,6 @@ const Lead = sequelize.define(
     email: {
       type: DataTypes.STRING,
       allowNull: true,
-      
     },
     alternate_phone: {
       type: DataTypes.STRING,
@@ -93,5 +91,3 @@ module.exports = Lead;
 //     await sequelize.close();
 //   }
 // })();
-
-//hello
